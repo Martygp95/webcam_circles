@@ -1,4 +1,4 @@
-## webcam_circles
+## Webcam_circles
 Circle detection from online webcam images
 
 ## Transformada de Hough
@@ -9,12 +9,19 @@ A partir de la imatge es poden trobar punts que es detectin com a vores d'un obj
 
 Per tal d'evitar aquests errors, la transformada de Hough analitza les dades des d'un punt de vista paramètric (amb dos paràmetres, r i O), amb els quals obtindrem curves per a cada punt considerat com a vora d'un objecte. Per a cada curva que s'obté, es representa en un mapa
 , i es van acumulant aquestes curves. Al final s'obté un mapa amb totes les curves;Els pics resultants del mapa a partir de l'acumulació ens permetràn determinar el tipus de forma geomètrica de la imatge. 
-
+a
 A partir de la modificació del rang dinàmic i  del contrast de la imatge, es poden observar zones o patrons d'informació que permeten evaluar, per exemple, la quantitat de segments que es troben en una figura. 
 
 Un cop es detecta la figura i la quantitat de segments, es treu la imformació del mapa de Hough i es torna a recomposar. Al recomposar-ho, obtindrem la figura geomètrica.
 
+
+## Canvis de paràmetres
+
+A continuació s'explicaran els paràmetres definits el seu efecte en la imatge resultant:
+
+CANNY_EDGE_TH - Determina el treshold per un operador anomenat *Canny*, que permet la detecció de vores. Veiem que el valor és molt alt al principi; si el baixem per complet, observem que es detecten a la imatge múltiples cercles inexistents. Això és degut a que al baixar el valor del treshold de manera abrupta, apareguin inherentment fragments de vores a la sortida que poden donar a equivocació en la detecció de vores.
+
 ## Referències
 
 Hough Transform *http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm*
-
+Canny Edge Detector *http://homepages.inf.ed.ac.uk/rbf/HIPR2/canny.htm*
