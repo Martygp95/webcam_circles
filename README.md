@@ -1,4 +1,4 @@
-# webcam_circleis
+# webcam_circles
 Circle detection from online webcam images
 
 ## Transformada de Hough
@@ -14,4 +14,7 @@ A partir de la modificació del rang dinàmic i  del contrast de la imatge, es p
 
 Un cop es detecta la figura i la quantitat de segments, es treu la imformació del mapa de Hough i es torna a recomposar. Al recomposar-ho, obtindrem la figura geomètrica.
 
+## Referències
+
+Hough Transform *http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm*
 
