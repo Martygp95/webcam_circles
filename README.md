@@ -38,6 +38,9 @@ A continuació s'explicaran els paràmetres definits el seu efecte en la imatge 
 ## Referències
 
 Hough Transform *http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm*
+
 Canny Edge Detector *http://homepages.inf.ed.ac.uk/rbf/HIPR2/canny.htm*
+
 Smoothing Images *https://docs.opencv.org/3.3.1/dc/dd3/tutorial_gausian_median_blur_bilateral_filter.html*
+
 OpenCV Hough Circle Transform *https://docs.opencv.org/3.4/d3/de5/tutorial_js_houghcircles.html*
